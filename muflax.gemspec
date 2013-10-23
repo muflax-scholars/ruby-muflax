@@ -14,10 +14,10 @@ Gem::Specification.new do |s|
   s.homepage = "http://github.com/muflax/ruby-muflax"
   s.require_paths = ["lib"]
 
-  s.add_dependency("active_support", "~> 4.0")
+  s.add_dependency("activesupport", "~> 4.0")
   s.add_dependency("awesome_print")
-  s.add_dependency("trollop",        "~> 2.0")
-  s.add_dependency("highline",       "~> 1.6")
+  s.add_dependency("trollop",       "~> 2.0")
+  s.add_dependency("highline",      "~> 1.6")
   s.add_dependency("range_math")
   s.add_dependency("pry")
 end
