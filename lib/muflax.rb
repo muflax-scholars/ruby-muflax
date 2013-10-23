@@ -5,6 +5,7 @@
 
 require "awesome_print"
 require "date"
+require "highline/import"
 require "pry"
 require "range_math"
 require "set"

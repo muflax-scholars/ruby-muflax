@@ -1,6 +1,6 @@
 desc "open an irb session preloaded with this library"
 task :console do
-  sh "irb -Ilib -rmuflax"
+  sh "pry -Ilib -rmuflax"
 end
 
 desc "build a gem from the gemspec"
