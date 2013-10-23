@@ -17,7 +17,12 @@ require "range_math"
 require 'active_support'
 require 'active_support/all'
 
-# gem libs
-Dir["#{File.join(File.dirname(__FILE__), "muflax")}/*.rb"].each do |lib|
-  require lib
+def require_local_libs path
+  Dir["#{File.join(File.dirname(__FILE__), path)}/*.rb"].each do |lib|
+    require lib
+  end
 end
+
+
+# gem libs
+require_local_libs "muflax"
