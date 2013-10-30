@@ -26,4 +26,4 @@ task :deploy => [:install] do
   sh "gem push pkg/muflax-*.gem"
 end
 
-task :default => :install
+task :default => :deploy
