@@ -5,7 +5,7 @@
 
 def require_local lib_name, location=__FILE__
   file = File.symlink?(location) ? File.readlink(location) : location
-  lib = File.join File.dirname(file), "/../lib/#{lib_name}"
+  lib = File.join File.dirname(file), "/../lib/#{lib_name}.rb"
 
   if File.exists? lib
     # using local version
