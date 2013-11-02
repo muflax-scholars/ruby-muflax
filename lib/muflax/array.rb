@@ -4,29 +4,37 @@
 # License: GNU GPL 3 <http://www.gnu.org/copyleft/gpl.html>
 
 class Array
-  def align str=" "
+  def align str=" ", alignment: :left
     lines = []
-    columns = 1
+    columns = 0
 
     # split all lines
     self.each do |line|
       line = line.split(str)
       lines << line
-      columns = [columns, line.size].max
+      columns = [columns, line.size - 1].max
     end
 
+    just_function = case alignment
+                    when :left   ; :ljust
+                    when :right  ; :rjust
+                    when :center ; :center
+                    else
+                      raise "invalid alignment: #{alignment}"
+                    end
+
+
+
     # justify all columns
-    (1..columns).each do |column|
-      length = lines.select{|line| line[column]}.length_of_longest
+    (0..columns).each do |column|
+      length = lines.map{|line| line[column]}.length_of_longest
 
       lines.each do |line|
-        line[column] = line[column].ljust(length) unless line[column].nil?
+        line[column] = line[column].send(just_function, length) unless line[column].nil?
       end
     end
 
     # join lines back together
     lines.map{|line| line.join(str)}
-
-    lines
   end
 end
