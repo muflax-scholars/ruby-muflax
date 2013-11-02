@@ -8,6 +8,6 @@ class String
   alias :ends_with?   :end_with?
 
   def align str=" ", alignment: :left
-    self.split("\n").align(str, alignment).join("\n")
+    self.split("\n").align(str, alignment: alignment).join("\n")
   end
 end
