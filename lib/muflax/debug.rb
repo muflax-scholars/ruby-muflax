@@ -3,11 +3,18 @@
 # Copyright muflax <mail@muflax.com>, 2013
 # License: GNU GPL 3 <http://www.gnu.org/copyleft/gpl.html>
 
+# This is very stupid and shouldn't be used in real code, which is why I will use it in real code.
+
+require 'debug_inspector'
+
 def bp
-  binding.pry
+  RubyVM::DebugInspector.open do |inspector|
+    eval("binding.pry", inspector.frame_binding(2))
+  end
 end
 
 def bpe
-  binding.pry
-  exit
+  RubyVM::DebugInspector.open do |inspector|
+    eval("binding.pry; exit", inspector.frame_binding(2))
+  end
 end
