@@ -37,4 +37,8 @@ class Array
     # join lines back together
     lines.map{|line| line.join(str)}
   end
+
+  def align! str=" ", alignment: :left
+    self.replace(self.align(str, aligment: alignment))
+  end
 end

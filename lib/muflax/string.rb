@@ -10,4 +10,9 @@ class String
   def align str=" ", alignment: :left
     self.split("\n").align(str, alignment: alignment).join("\n")
   end
+
+  def align! str=" ", alignment: :left
+    self.replace(self.align(str, aligment: alignment))
+  end
+
 end
