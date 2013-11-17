@@ -3,4 +3,4 @@ Convenience library that pulls in all standard libraries and hacks I use in quic
 # TODO
 
 - memoization cached in file
-- make File.open(name, "w") generate directories if necessary
+  - maybe even fancy checkpoint system some day?

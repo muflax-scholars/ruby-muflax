@@ -5,6 +5,7 @@
 
 # ruby libs
 require "date"
+require "fileutils"
 require "set"
 
 # external libs
