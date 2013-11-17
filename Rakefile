@@ -1,5 +1,5 @@
-desc "open an irb session preloaded with this library"
-task :console do
+desc "open a pry session preloaded with this library"
+task :pry do
   sh "pry -Ilib -rmuflax"
 end
 
