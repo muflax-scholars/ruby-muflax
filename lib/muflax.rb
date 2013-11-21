@@ -13,6 +13,7 @@ require "awesome_print"
 require "highline/import"
 require "pry"
 require "range_math"
+require "trollop"
 
 # rails
 require 'active_support'
