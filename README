@@ -2,6 +2,8 @@ Convenience library that pulls in all standard libraries and hacks I use in quic
 
 # TODO
 
+- shortcut for "@var = var" initializations; I think Rails ships it even?
+
 # Memoization
 
 Should work like this:
