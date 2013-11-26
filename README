@@ -3,6 +3,7 @@ Convenience library that pulls in all standard libraries and hacks I use in quic
 # TODO
 
 - shortcut for "@var = var" initializations; I think Rails ships it even?
+- .split(" | ").map(&:strip) shortcut
 
 # Memoization
 

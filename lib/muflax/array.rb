@@ -39,6 +39,6 @@ class Array
   end
 
   def align! str=" ", alignment: :left
-    self.replace(self.align(str, aligment: alignment))
+    self.replace(self.align(str, alignment: alignment))
   end
 end
