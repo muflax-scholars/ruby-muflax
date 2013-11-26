@@ -4,6 +4,7 @@ Convenience library that pulls in all standard libraries and hacks I use in quic
 
 - shortcut for "@var = var" initializations; I think Rails ships it even?
 - .split(" | ").map(&:strip) shortcut
+- shortcut for opening compressed corpora
 
 # Memoization
 

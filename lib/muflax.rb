@@ -4,6 +4,7 @@
 # License: GNU GPL 3 <http://www.gnu.org/copyleft/gpl.html>
 
 # ruby libs
+require "csv"
 require "date"
 require "fileutils"
 require "set"
