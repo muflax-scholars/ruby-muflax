@@ -15,4 +15,7 @@ class String
     self.replace(self.align(str, aligment: alignment))
   end
 
+  def whackuum str=/\s+/
+    self.split(str).map(&:strip)
+  end
 end
