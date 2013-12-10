@@ -11,6 +11,7 @@ require "set"
 
 # external libs
 require "awesome_print"
+require "chronic"
 require "highline/import"
 require "pry"
 require "range_math"

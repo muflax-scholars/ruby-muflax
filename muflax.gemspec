@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name = "muflax"
-  s.version = "0.1.16"
+  s.version = "0.1.17"
 
   s.authors = ["muflax"]
   s.summary = "muflax standard library"
@@ -16,8 +16,9 @@ Gem::Specification.new do |s|
 
   s.add_dependency("activesupport")
   s.add_dependency("awesome_print")
-  s.add_dependency("trollop")
+  s.add_dependency("chronic")
   s.add_dependency("highline")
-  s.add_dependency("range_math")
   s.add_dependency("pry")
+  s.add_dependency("range_math")
+  s.add_dependency("trollop")
 end
