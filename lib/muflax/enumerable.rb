@@ -21,4 +21,30 @@ module Enumerable
   def length_of_shortest
     self.shortest.to_s.length
   end
+
+  def average
+    self.sum.to_f / self.size.to_f
+  end
+  alias :mean :average
+  alias :avg  :average
+
+  def geometric_mean
+    self.reduce(:*).to_f ** (1.0 / self.size.to_f)
+  end
+
+  def median
+    self.percentile 0.5
+  end
+
+  def median_by &block
+    self.percentile_by 0.5, &block
+  end
+
+  def percentile percent
+    self.sort[(self.size * percent).round]
+  end
+
+  def percentile_by percent, &block
+    self.sort_by(&block)[(self.size * percent).round]
+  end
 end
