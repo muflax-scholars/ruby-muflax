@@ -6,20 +6,20 @@
 module Enumerable
   # find shortest element
   def shortest
-    self.min_by{|s| s.to_s.length}
+    self.min_by{|s| s.str_length}
   end
 
   # find longest element
   def longest
-    self.max_by{|s| s.to_s.length}
+    self.max_by{|s| s.str_length}
   end
 
   def length_of_longest
-    self.longest.to_s.length
+    self.longest.str_length
   end
 
   def length_of_shortest
-    self.shortest.to_s.length
+    self.shortest.str_length
   end
 
   def average

@@ -23,8 +23,6 @@ class Array
                       raise "invalid alignment: #{alignment}"
                     end
 
-
-
     # justify all columns
     (0..columns).each do |column|
       length = lines.map{|line| line[column]}.length_of_longest

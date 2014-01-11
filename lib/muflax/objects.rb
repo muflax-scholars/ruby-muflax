@@ -43,4 +43,9 @@ class Object
       self.respond_to? attr and other.respond_to? attr and self.send(attr) == other.send(attr)
     end
   end
+
+  # consistent string length
+  def str_length
+    HighLine.uncolor(self.to_s).length
+  end
 end
