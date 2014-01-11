@@ -28,7 +28,13 @@ class Array
       length = lines.map{|line| line[column]}.length_of_longest
 
       lines.each do |line|
-        line[column] = line[column].send(just_function, length) unless line[column].nil?
+        elem = line[column]
+        unless elem.nil?
+          # how much the element is internally longer than it appears
+          elem_diff = elem.to_s.length - elem.str_length
+
+          line[column] = elem.send(just_function, length + elem_diff)
+        end
       end
     end
 
