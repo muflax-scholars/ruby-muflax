@@ -45,4 +45,15 @@ class Array
   def align! str=" ", alignment: :left
     self.replace(self.align(str, alignment: alignment))
   end
+
+  def triangle
+    return to_enum(:triangle) unless block_given?
+
+    self.each.with_index do |a, ai|
+      self.each.with_index do |b, bi|
+        next if bi < ai
+        yield [a, b]
+      end
+    end
+  end
 end

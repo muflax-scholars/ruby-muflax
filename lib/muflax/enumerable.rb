@@ -47,4 +47,8 @@ module Enumerable
   def percentile_by percent, &block
     self.sort_by(&block)[(self.size * percent).round]
   end
+
+  def triangle
+    self.to_a.triangle
+  end
 end
