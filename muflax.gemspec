@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name = "muflax"
-  s.version = "0.1.20"
+  s.version = "0.1.21"
 
   s.authors = ["muflax"]
   s.summary = "muflax standard library"
@@ -14,7 +14,7 @@ Gem::Specification.new do |s|
   s.homepage = "http://github.com/muflax/ruby-muflax"
   s.require_paths = ["lib"]
 
-  s.add_dependency "activesupport"
+  s.add_dependency "activesupport", "~> 4"
   s.add_dependency "awesome_print"
   s.add_dependency "chronic"
   s.add_dependency "highline"
