@@ -22,6 +22,10 @@ require "trollop"
 require 'active_support'
 require 'active_support/all'
 
+
+# avoid rails deprecation warning
+I18n.enforce_available_locales = false
+
 def require_local_libs path, location=__FILE__
   Dir["#{File.join(File.dirname(location), path)}/*.rb"].each do |lib|
     require lib
