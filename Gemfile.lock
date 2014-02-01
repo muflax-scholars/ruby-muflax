@@ -2,7 +2,7 @@ PATH
   remote: .
   specs:
     muflax (0.1.21)
-      activesupport
+      activesupport (~> 4)
       awesome_print
       chronic
       debug_inspector
@@ -30,7 +30,7 @@ GEM
     method_source (0.8.2)
     minitest (4.7.5)
     multi_json (1.8.4)
-    pry (0.9.12.4)
+    pry (0.9.12.6)
       coderay (~> 1.0)
       method_source (~> 0.8)
       slop (~> 3.4)
