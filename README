@@ -4,6 +4,9 @@ Convenience library that pulls in all standard libraries and hacks I use in quic
 
 - shortcut for "@var = var" initializations; I think Rails ships it even?
 - shortcut for opening compressed corpora
+- .to_i!, .max!
+- a few more extensions to range_math, notably "pass method call to numbers"
+- always expand_path in File.open
 
 # Memoization
 
