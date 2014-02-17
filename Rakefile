@@ -17,7 +17,7 @@ end
 
 desc "install a gem"
 task :install => [:clean, :build] do
-  sh "gem install --no-format-executable pkg/muflax-*.gem"
+  sh "gem install -l --no-format-executable pkg/muflax-*.gem"
 end
 
 desc "deploys ALL the things"

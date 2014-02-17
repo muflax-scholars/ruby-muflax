@@ -22,7 +22,6 @@ require "trollop"
 require 'active_support'
 require 'active_support/all'
 
-
 # avoid rails deprecation warning
 I18n.enforce_available_locales = false
 
