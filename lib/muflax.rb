@@ -8,6 +8,7 @@ require "csv"
 require "date"
 require "fileutils"
 require "set"
+require "zlib"
 
 # external libs
 require "awesome_print"

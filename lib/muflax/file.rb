@@ -21,4 +21,17 @@ class File
 
     f
   end
+
+  def self.load name
+    name = File.expand_path(name)
+
+    file = case name
+           when /\.gz$/
+             Zlib::GzipReader.open(name)
+           else
+             File.open(name)
+           end
+
+    file
+  end
 end
