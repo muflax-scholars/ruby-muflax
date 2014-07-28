@@ -8,6 +8,7 @@ require "csv"
 require "date"
 require "fileutils"
 require "set"
+require "yaml"
 require "zlib"
 
 # external libs
