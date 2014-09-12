@@ -5,6 +5,8 @@
 
 class File
   def self.save name, as: :text, &blk
+    name = File.expand_path(name)
+
     # make sure directory exists
     dir = File.dirname(name)
     FileUtils.mkdir_p dir if not Dir.exists? dir

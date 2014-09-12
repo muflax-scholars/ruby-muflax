@@ -9,7 +9,8 @@ class Dir
 
     # make glob sort by default
     def [] *args
-      self.send(:"_[]", *args).sort
+
+      self.send(:"_[]", *(args.map{|a| File.expand_path(a)})).sort
     end
   end
 end

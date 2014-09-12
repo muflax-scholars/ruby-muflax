@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    muflax (0.1.25)
+    muflax (0.1.26)
       activesupport (~> 4)
       awesome_print
       chronic
