@@ -10,7 +10,7 @@ class Array
 
     # split all lines
     self.each do |line|
-      line = line.split(str)
+      line = line.split(str, -1)
       lines << line
       columns = [columns, line.size - 1].max
     end
