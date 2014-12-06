@@ -12,17 +12,18 @@ require "yaml"
 require "zlib"
 
 # external libs
+require "adt"
 require "awesome_print"
 require "chronic"
-require 'debug_inspector'
+require "debug_inspector"
 require "highline/import"
 require "pry"
 require "range_math"
 require "trollop"
 
 # rails
-require 'active_support'
-require 'active_support/all'
+require "active_support"
+require "active_support/all"
 
 # avoid rails deprecation warning
 I18n.enforce_available_locales = false

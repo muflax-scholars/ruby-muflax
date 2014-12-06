@@ -15,6 +15,7 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib"]
 
   s.add_dependency "activesupport", "~> 4"
+  s.add_dependency "adt"
   s.add_dependency "awesome_print"
   s.add_dependency "chronic"
   s.add_dependency "highline"
