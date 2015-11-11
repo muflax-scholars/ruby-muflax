@@ -10,4 +10,12 @@ module Kernel
 
     puts "-" * (linewidth)
   end
+
+  def zsh command
+    system "zsh", "-c", command
+  end
+
+  def fish command
+    system "fish", "-c", command
+  end
 end
