@@ -51,4 +51,17 @@ module Enumerable
   def triangle
     self.to_a.triangle
   end
+
+  def histogram &block
+    histo = vivaHash 0
+    self.each do |el|
+      histo[block.call(el)] += 1
+    end
+
+    histo
+  end
+
+  def count_by &block
+    self.histogram(&block).sort_by(&:second).to_h
+  end
 end
