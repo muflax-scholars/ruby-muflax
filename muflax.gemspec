@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name = "muflax"
-  s.version = "0.1.30"
+  s.version = "0.1.31"
 
   s.authors = ["muflax"]
   s.summary = "muflax standard library"
