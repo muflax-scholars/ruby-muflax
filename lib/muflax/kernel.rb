@@ -12,10 +12,10 @@ module Kernel
   end
 
   def zsh command
-    system "zsh", "-c", command
+    system "zsh", "-l", "-c", command
   end
 
   def fish command
-    system "fish", "-c", command
+    system "fish", "-l", "-c", command
   end
 end
