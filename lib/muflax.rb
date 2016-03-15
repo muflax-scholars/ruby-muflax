@@ -12,7 +12,6 @@ require "yaml"
 require "zlib"
 
 # external libs
-require "adt"
 require "awesome_print"
 require "chronic"
 require "debug_inspector"
