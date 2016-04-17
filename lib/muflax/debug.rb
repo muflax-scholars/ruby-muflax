@@ -16,3 +16,11 @@ def bpe
     eval("binding.pry; exit", inspector.frame_binding(2))
   end
 end
+
+def v *variables
+  RubyVM::DebugInspector.open do |inspector|
+    variables.each do |variable|
+      eval("print '#{variable}: '; ap #{variable}", inspector.frame_binding(2))
+    end
+  end
+end
