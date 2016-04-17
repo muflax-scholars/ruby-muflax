@@ -1,12 +1,12 @@
 Gem::Specification.new do |s|
   s.name = "muflax"
-  s.version = "0.1.33"
+  s.version = "0.1.34"
 
   s.authors = ["muflax"]
   s.summary = "muflax standard library"
   s.description = "collection of stuff muflax always uses in scripts"
   s.email = "mail@muflax.com"
-  s.license = "GPL-3"
+  s.license = "GPL-3.0"
   s.extra_rdoc_files = [
     "README"
   ]
@@ -16,12 +16,11 @@ Gem::Specification.new do |s|
 
   s.add_dependency "activesupport", "~> 4"
   s.add_dependency "awesome_print"
-  s.add_dependency "chronic"
+  s.add_dependency "debug_inspector"
   s.add_dependency "highline"
   s.add_dependency "pry"
   s.add_dependency "range_math"
   s.add_dependency "trollop"
-  s.add_dependency "debug_inspector"
 
   s.add_development_dependency "rake"
 end

@@ -1,11 +1,9 @@
 PATH
   remote: .
   specs:
-    muflax (0.1.33)
+    muflax (0.1.34)
       activesupport (~> 4)
-      adt
       awesome_print
-      chronic
       debug_inspector
       highline
       pry
@@ -21,9 +19,7 @@ GEM
       minitest (~> 5.1)
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
-    adt (0.0.7)
     awesome_print (1.6.1)
-    chronic (0.10.2)
     coderay (1.1.0)
     debug_inspector (0.0.2)
     highline (1.6.21)

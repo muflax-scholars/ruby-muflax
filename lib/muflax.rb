@@ -13,10 +13,7 @@ require "zlib"
 
 # external libs
 require "awesome_print"
-require "chronic"
-require "debug_inspector"
 require "highline/import"
-require "pry"
 require "range_math"
 require "trollop"
 
